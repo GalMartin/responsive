@@ -49,7 +49,7 @@
 
     <div class="main">
     <form action="javascript:valid(0)">
-        <fieldset>
+        <fieldset id="asd">
             <legend>Szamológép made by Martin</legend>
         <input type="number" name="szam" id="a" placeholder="szam1">
         <input type="number" name="szam" id="b" placeholder="szam2">
@@ -85,19 +85,22 @@
 
         function ad() {
             c.value = Number(a.value)+Number(b.value)
-            document.getElementById("field").style.backgroundColor = "rgb(80, 2,  2, 0,200)";
+            document.getElementById("asd").style.backgroundColor = "rgb(0, 0, 0)";
         }
         function kiv(){
             c.value = Number(a.value)-Number(b.value)
-            document.getElementById("field").style.backgroundColor = "rgb(80, 2,  2, 0,200)";
+            document.getElementById("asd").style.backgroundColor = "rgb(255, 255, 255)";
         }
         function szor(){
             c.value = Number(a.value)*Number(b.value)
-            document.getElementById("field").style.backgroundColor = "rgb(80, 2,  2, 0,200)";
+            document.getElementById("asd").style.backgroundColor = "rgb(212, 0, 0)";
         }
         function oszt(){
             c.value = Number(a.value)/Number(b.value)
-            document.getElementById("field").style.backgroundColor = "rgb(80, 2,  2, 0,200)";
+            document.getElementById("asd").style.backgroundColor = "#19375a";
+        }
+        function del() {
+            document.getElementById("asd").style.backgroundColor = "#7fffd4";
         }
     
 
