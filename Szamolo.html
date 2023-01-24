@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Számológép</title>
+
+    <style>
+        input{
+            color: rgb(0, 0, 0);
+            width: 200px;
+            background-color: rgb(241, 126, 126);
+        }
+        legend {
+            text-align: center;
+            border: solid 2px black;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Gál Martin</h1>
+      </div>
+      
+      <div style="overflow:auto">
+        <div class="menu">
+          <a href="index.html">Főoldal</a>
+          <a href="keplink.html">Képlink</a>
+          <a href="lista.html">Lista</a>
+          <a href="urlap.html">Rendelés</a>
+          <a href="tablazat.html">Táblázat</a>
+          <a href="div.html">Évszakok</a>
+          <a class="active" href="Szamolo.html">Számológép</a>
+        </div>
+
+    <div class="main">
+    <form action="javascript:valid(0)">
+        <fieldset>
+            <legend>Szamológép made by Martin</legend>
+        <input type="number" name="szam" id="a" placeholder="szam1">
+        <input type="number" name="szam" id="b" placeholder="szam2">
+        <input type="text" name="szam" id="c"   placeholder="eredmeny" readonly>
+        <br><br>
+        <input type="button" value="+" onclick="ad()">
+        <input type="button" value="-" onclick="kiv()">
+        <input type="button" value="*" onclick="szor()">
+        <input type="button" value="/" onclick="oszt()">
+        <input type="reset" value="del" onclick="del()"> 
+    </form>
+    </div>
+    </fieldset>
+
+    <div class="right">
+        <h2>Rólam</h2>
+        
+        <br>
+        <img src="img/kollazskep.jpg" alt="Kollázs" title="Kollázs" width="350">
+        <p>Gál Martin vagyok és ruhellem a cigányokat.</p>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <footer>
+        galm1@kkszki.hu
+      </footer>
+    </div>
+
+
+    <script>
+
+
+        function ad() {
+            c.value = Number(a.value)+Number(b.value)
+            document.getElementById("field").style.backgroundColor = "rgb(80, 2,  2, 0,200)";
+        }
+        function kiv(){
+            c.value = Number(a.value)-Number(b.value)
+            document.getElementById("field").style.backgroundColor = "rgb(80, 2,  2, 0,200)";
+        }
+        function szor(){
+            c.value = Number(a.value)*Number(b.value)
+            document.getElementById("field").style.backgroundColor = "rgb(80, 2,  2, 0,200)";
+        }
+        function oszt(){
+            c.value = Number(a.value)/Number(b.value)
+            document.getElementById("field").style.backgroundColor = "rgb(80, 2,  2, 0,200)";
+        }
+    
+
+
+
+    </script>
+
+    
+    
+</body>
+</html>
